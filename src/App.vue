@@ -3,17 +3,16 @@
     <div class="layout">
       <banner />
       <router-view></router-view>
-      <Footer />
     </div>
   </div>
 </template>
 
 <script>
 import Banner from "./components/Banner.vue";
-import Footer from "./components/Footer.vue";
+//import Footer from "./components/Footer.vue";
 
 export default {
-  components: { Banner, Footer },
+  components: { Banner},
   name: "App",
 };
 </script>
@@ -25,7 +24,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-    background-color: rgb(235, 230, 226);
+    background-color: whitesmoke;
 
 }
 .layout {

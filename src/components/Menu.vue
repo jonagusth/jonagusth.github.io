@@ -1,9 +1,8 @@
 <template>
   <div id="menu">
-    <!-- <p>this is a meny</p> -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="first">Social Data</a>
+        <a class="navbar-brand title" href="first">Lord Of The Rings</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -18,16 +17,22 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="about" v-bind:class="{ active: isActive('about') }">About us</a>
+              <a class="nav-link" href="about" v-bind:class="{ active: isActive('about') }">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="first" v-bind:class="{ active: isActive('first') }">Cars in Copenhagen</a>
+              <a class="nav-link" href="first" v-bind:class="{ active: isActive('first') }">The Project</a>
             </li>
                         <li class="nav-item">
-              <a class="nav-link" href="second" v-bind:class="{ active: isActive('second') }">Districts</a>
+              <a class="nav-link" href="second" v-bind:class="{ active: isActive('second') }">Datasets</a>
             </li>
                         <li class="nav-item">
-              <a class="nav-link" href="third" v-bind:class="{ active: isActive('third') }">Green trends</a>
+              <a class="nav-link" href="third" v-bind:class="{ active: isActive('third') }">Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="third" v-bind:class="{ active: isActive('third') }">Want to learn more?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="third" v-bind:class="{ active: isActive('third') }">Our team</a>
             </li>
           </ul>
         </div>
@@ -53,10 +58,18 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.title {
+  color: black;
+
+}
+
+.title{
+  margin-left: 80px;
+}
+
 #navbar {
-  background-color: blue;
+  /*background-color: blue;*/
   /*border-style: solid;
   height: 50px;
   width: 100%;*/

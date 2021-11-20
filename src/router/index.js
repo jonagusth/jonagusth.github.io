@@ -1,4 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
+
+import LordOfTheRings from "../components/LordOfTheRings.vue";
 import About from "../components/About.vue";
 import FirstPage from "../components/FirstPage.vue";
 import SecondPage from "../components/SecondPage.vue";
@@ -8,7 +10,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: FirstPage,
+    component: LordOfTheRings,
   },
   {
     path: "/about",

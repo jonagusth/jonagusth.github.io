@@ -22,9 +22,11 @@ export default {
 <style scoped>
 #myHeader {
   color: #000000;
-  background-color: rgb(27, 150, 138);
+  background-color: whitesmoke;
   height: 60px;
   width: 100%;
   position: relative;
+  /*border-bottom: 5px solid grey;*/
+  box-shadow: 0 5px 2px #888888;
 }
 </style>
