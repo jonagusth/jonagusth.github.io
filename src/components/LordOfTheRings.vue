@@ -1,329 +1,701 @@
 <template>
   <div id="lotr">
     <div class="row align-items-center p-3">
-      <div class="col-md-6">
-        <img src="../assets/LOTR/lotr_logo.png" class="img-fluid" />
-      </div>
-      <div class="col-md-6">
-        <h2>The Lord of the Rings</h2>
-        <p>Social Graphs Final project</p>
-      </div>
-    </div>
-    <div class="row align-items-center p-3">
-      <div class="col-md-12">
-        <h2>The project</h2>
-      </div>
-      <div class="col-md-12">
-        <div class="embed-responsive embed-responsive-1by1">
-          <iframe
-            class="embed-responsive-item"
-            src="LortNetwork.html"
-            width="610px"
-            height="810px"
-          ></iframe>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="row align-items-center p-3">
+          <div class="col-md-6">
+            <img src="../assets/LOTR/lotr_logo.png" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>The Lord of the Rings</h2>
+            <p>Social Graphs Final project</p>
+          </div>
+        </div>
+        <div class="row align-items-center p-3">
+          <div class="col-md-12">
+            <h2>The project</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="embed-responsive embed-responsive-1by1">
+              <iframe
+                class="embed-responsive-item"
+                src="LortNetwork.html"
+                width="610px"
+                height="810px"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <p>
+              This project will investigate connections between characters of
+              the Lord of the Rings trilogy.
+              <span style="font-weight: bold; color: red"
+                >BÆTA EITTHVERJU VIÐ HÉR</span
+              >
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-md-12">
-        <p>
-          This project will investigate connections between characters of the
-          Lord of the Rings trilogy.
-          <span style="font-weight: bold; color: red"
-            >BÆTA EITTHVERJU VIÐ HÉR</span
+      <div class="row align-items-center p-3">
+        <div class="col-md-12">
+          <h2>The data</h2>
+        </div>
+        <div class="col-md-12">
+          <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
+        </div>
+        <div class="col-md-12">
+          <p>
+            This project uses 3 data sources, where each data source is used to
+            perform different analysis.
+          </p>
+          <h4>Fandom Wiki</h4>
+          <p>
+            The
+            <a href="https://lotr.fandom.com/wiki/Main_Page"
+              >Lord of the Rings fandom wiki</a
+            >
+            is a community driven wiki page, focused on the Lord of the rings
+            thematic universe. From this site, lists of characters ,appearing in
+            each of the thee movies, were collected. Using this list of
+            characters , the wiki page for every character appearing in the
+            movies were collected. Each wiki page contains refrences to other
+            characters. In total 121 wiki pages were collected, amounting to
+            1,24MB of data.
+          </p>
+          <p>
+            This data was used to generate a network of the characters. Each
+            character is modeled as a node in the network, and each refrence is
+            modeled as a link in the network. The network constructed has 121
+            nodes and 710 nodes.
+          </p>
+          <h4>The Books</h4>
+          <p>The books were used as a data source yes</p>
+
+          <h4>The movie scripts (Transcripts)</h4>
+          <p>
+            Transcripts of the three movies were used a data sources as well. As
+            the transcripts specify very well which character is saying what,
+            they were used to perform sentimental analysis for major characters,
+            races and cultures. The transcripts were also used to generate word
+            clouds of frequently used words in the films.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center p-3">
+        <div class="col-md-12">
+          <h2>The network</h2>
+        </div>
+        <div class="col-md-12">
+          <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
+        </div>
+        <div class="col-md-12">
+          <h4>Tools used</h4>
+          <p>
+            To model the network, the python package
+            <a href="https://networkx.org/">Networkx</a> was used. This package
+            offers many functionaniltie to analyze the network. To visualize the
+            network,
+            <a href="https://github.com/bhargavchippada/forceatlas2"
+              >Force atlas 2</a
+            >
+            was use to set the positions of the nodes and
+            <a href="http://docs.bokeh.org/en/latest/">bokeh</a> was used to
+            generate an interactive visualisation of the network.
+          </p>
+          <h4>Statistics</h4>
+          <p>
+            Once the network was constructed, some general statistics were
+            extracted. The constructed network has 121 nodes, with 710 edges.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center p-3">
+        <div class="col-md-12">
+          <h2>The books</h2>
+        </div>
+        <div class="col-md-12">
+          <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
+        </div>
+        <div class="col-md-12">
+          <p>
+            A nice text describing the picture. A nice text describing the
+            picture.A nice text describing the picture.A nice text describing
+            the picture.A nice text describing the picture.A nice text
+            describing the picture.A nice text describing the picture.A nice
+            text describing the picture.A nice text describing the picture.A
+            nice text describing the picture.A nice text describing the
+            picture.A nice text describing the picture.A nice text describing
+            the picture.A nice text describing the picture.A nice text desc
+            ribing the picture.A nice text describing the picture.A nice text
+            describing the pictu re.A nice text describing the picture.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center p-3">
+        <div class="col-md-12">
+          <h2>The movies</h2>
+        </div>
+        <div class="col-md-12">
+          <div class="row align-items-center p-3">
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/fellowship.jpg"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/two_towers.jpg"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/return_of_the_king.jpg"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>
+            The following chapter covers the analysis conducted on the
+            transcripts of the three Lord of the Rings movies. This chapter
+            covers language processing of the three Lord of the Rings movies
+            through word clouds for each movie and a sentiment analysis of
+            characters, races and cultures of men. Transcripts are ideal
+            language processing and for a sentiment analysis since they display
+            very clearly which character in the movies says what. Let's take for
+            example: Gandalf: If you’re referring to the incident with the
+            dragon, I was barely involved. All I did was give your uncle a
+            little nudge out of the door. Frodo: Whatever you did, you’ve been
+            officially labeled a disturber of the peace. Gandalf: Oh really?
+            this has been processed into: "frodo baggins": [" Whatever you did,
+            you’ve been officially labeled a disturber of the peace. "]
+            "gandalf": ["If you’re referring to the incident with the dragon, I
+            was barely involved. All I did was give your uncle a little nudge
+            out of the door.", "Oh really?"] Which can then be used for the
+            analysis
+          </p>
+        </div>
+        <div class="col-md-12">
+          <h4>Language Processing</h4>
+        </div>
+        <div class="col-md-12">
+          <p>
+            From the transcripts the the dialogue of the major characters could
+            be analyzed. In this section wordclouds of frequent words for the
+            major characters will be generated. Word clouds for the films in
+            general will also be generated.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
           >
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="row align-items-center p-3">
-    <div class="col-md-12">
-      <h2>The data</h2>
-    </div>
-    <div class="col-md-12">
-      <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
-    </div>
-    <div class="col-md-12">
-      <p>
-        This project uses 3 data sources, where each data source is used to
-        perform different analysis.
-      </p>
-      <h4>Fandom Wiki</h4>
-      <p>
-        The
-        <a href="https://lotr.fandom.com/wiki/Main_Page"
-          >Lord of the Rings fandom wiki</a
-        >
-        is a community driven wiki page, focused on the Lord of the rings
-        thematic universe. From this site, lists of characters ,appearing in
-        each of the thee movies, were collected. Using this list of characters ,
-        the wiki page for every character appearing in the movies were
-        collected. Each wiki page contains refrences to other characters. In total
-        121 wiki pages were collected, amounting to 1,24MB of data.
-      </p>
-      <p>
-        This data was used to generate a network of the characters. Each
-        character is modeled as a node in the network, and each refrence is
-        modeled as a link in the network. The network constructed has 121 nodes
-        and 710 nodes.
-      </p>
-      <h4>The Books</h4>
-      <p>The books were used as a data source yes</p>
-
-      <h4>The movie scripts (Transcripts)</h4>
-      <p>
-        Transcripts of the three movies were used a data sources as well. As the transcripts specify
-        very well which character is saying what, they were used to perform sentimental analysis for major
-        characters, races and cultures. The transcripts were also used to generate word clouds of frequently 
-        used words in the films.
-
-      </p>
-    </div>
-  </div>
-  <div class="row align-items-center p-3">
-    <div class="col-md-12">
-      <h2>The network</h2>
-    </div>
-    <div class="col-md-12">
-      <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
-    </div>
-    <div class="col-md-12">
-      <h4>Tools used</h4>
-      <p>
-        To model the network, the python package <a href="https://networkx.org/">Networkx</a> was used.
-        This package offers many functionaniltie to analyze the network. To visualize the network, <a href="https://github.com/bhargavchippada/forceatlas2">Force atlas 2</a>
-        was use to set the positions of the nodes and <a href="http://docs.bokeh.org/en/latest/">bokeh</a> was used to generate an interactive visualisation of the network.
-      
-      </p>
-      <h4>Statistics</h4>
-      <p>Once the network was constructed, some general statistics were extracted. The constructed network
-        has 121 nodes, with 710 edges. 
-      </p>
-    </div>
-  </div>
-  <div class="row align-items-center p-3">
-    <div class="col-md-12">
-      <h2>A title for a chapter</h2>
-    </div>
-    <div class="col-md-12">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="7"
-            aria-label="Slide 8"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="8"
-            aria-label="Slide 9"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="9"
-            aria-label="Slide 10"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="10"
-            aria-label="Slide 11"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="../assets/LOTR/characterWordClouds/aragorn.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/boromir.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/frodo.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/gandalf.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/gimli.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/gollum.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/legolas.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/merry.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/pippin.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/sam.png"
-              class="d-block w-100"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/LOTR/characterWordClouds/saruman.png"
-              class="d-block w-100"
-            />
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="9"
+                aria-label="Slide 10"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="10"
+                aria-label="Slide 11"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/LOTR/characterWordClouds/aragorn.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/boromir.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/frodo.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/gandalf.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/gimli.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/gollum.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/legolas.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/merry.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/pippin.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/sam.png"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/LOTR/characterWordClouds/saruman.png"
+                  class="d-block w-100"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col-md-12">
+          <p>
+            These are the word clouds for major characters, based on term count
+            from their movie dialogue. The frequency of the words is represented
+            by their size in the word cloud. Some interesting patterns can be
+            seen in the word clouds. Most of the characters frequently mention
+            other characters, whereas Frodo is mentioned often by most of the
+            characters. Merry and Pippin mention each other very frequently,
+            which is understandable as they two do almost everything together
+            throughout the movies. Gollum's word cloud is interesting as his
+            dialogue is very different from that of the other major characters.
+            Gollum's most frequent word is Sméagol, which of course is one of
+            his two personalities. These personalities have a dialogue between
+            themselves in the films. The words master (his name for Frodo) and
+            precious (the ring), also appears frequently in his dialogue. Next,
+            wordclouds based on the films themselves will be generated.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <img
+            src="../assets/LOTR/movies/all_movies_cloud.png"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-12">
+          <p>
+            This word cloud is a collection of the most frequent words used
+            througout all the three movies. From the word cloud it can be seen
+            that the 'ring' and 'Frodo' are the top things on characters minds,
+            as they are mentioned most frequently throughout the movies. Next,
+            word clouds will be generated for each movie. To generate these
+            wordclouds tc-idf will be used. Tc-idf highlights the importance of
+            words for each film, so words that are bigger ,in the rendered word
+            cloud, hold more importance/are more distinctive for that movie.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <div class="row align-items-center p-3">
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/fellowship_movie_cloud.png"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/two_towers_move_cloud.png"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/return_movie_cloud.png"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>
+            For the first movie, The fellowship of the ring, the most important
+            words are 'Strider' (an nickname for Aragorn) and Bilbo. Overall the
+            word cloud is quite possitive, with words like 'Hello','goodnight'
+            and 'tea' appearing prominantly. The first film start of quite happy
+            and without much hardship and this is reflected in the word cloud.
+            The word cloud for the second film, The two Towers, is not as
+            possitive as the first film. Words like 'war', 'hopeless' and
+            'danger' can be seen. The most important words are 'precious',
+            'Sméagol', 'Ent' and 'Théoden'. Gollum appears first in this film so
+            his name and the word 'precious' are highlighted here. The word
+            cloud for the third film, Return of the King, higlithts 'Sméagol',
+            'Tirith', 'Denethor' and 'war'. In the third the battle for Minas
+            Tirith takes place, whose king is Denethor. This word cloud, like
+            the one for The two Towers, is quite negative overall.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <h4>Sentiment Analysis</h4>
+        </div>
+        <div class="col-md-12">
+          <p>
+            Sentiment Analysis is a good tool for analysing the mood of the
+            movies. From the transcripts the sentiment of characters, races and
+            cultures can be calculated. Let's start by defining the happiest and
+            saddest characters.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <div class="row align-items-center p-3">
+            <div class="col-md-6">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/happiest_characters.png"
+                  class="img-fluid"
+                />
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/saddest_characters.png"
+                  class="img-fluid"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>
+            It comes a no surprise that many of the happiest characters are
+            Hobbits. Hobbits are shy creature but yet capable of amazing things.
+            They enjoy farmin, food, parties and presetns. They are friendly,
+            happy creatures and therefore it comes as no surprise that they are
+            the happiest of all. The list of saddest characters includes
+            Gothmog, a corrupt being whose weapon of choice is a fiery whip,
+            Black Uruks, a dark wizard and The Ring itself. It also includes
+            Léowyn, a Rohirrin woman who disguises herself as a soilder and
+            fought in the Battle of the Pelennor Fields.
+          </p>
+        </div>
+        <div class="row align-items-center p-3">
+          <div class="col-md-8">
+            <img
+              src="../assets/LOTR/movies/movie_sentiment_characters.png"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4">
+            <p>
+              Merry, an intelligent hobbit with a fondness for boats and ponies,
+              is the happiest of the main characters. This fits the movies well
+              since Merry is known for thinking and talking about food even in
+              the most dangerous situations. Merries knack for complementing
+              others, especially his dear friend Pippin also has an affect of
+              his sentiment score. Boromir, a warrior of Gondor, has the second
+              highest sentiment but for a very different reason than Merry. He
+              does not speak about food, instead he uses words like faith, glory
+              and kings which influence his sentiment score for the better.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center p-3">
+          <div class="col-md-6">
+            <img
+              src="../assets/LOTR/movies/movie_sentiment_races.png"
+              class="img-fluid"
+            />
+            <p>
+              All three Lord of the Rings movies have an overwhelming amount of
+              hardship versus happiness. It therefore does not come as a
+              surprise that the sentiments of all races is quite low. There
+              seems to be little difference between the highest and lowest
+              sentiments of races. This can be explained by the fact that the
+              precence of hardship and pain is mirrored in both the sentiment of
+              the cause, for example Orks or Uruk-hai, but also in the races who
+              suffer, such as hobbits and men (in some cases, not all).
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="../assets/LOTR/movies/movie_sentiment_men.png"
+              class="img-fluid"
+            />
+            <p>
+              Taking a look at the sentimen scores of the most common cultures
+              of men it can be seen that the scores are very similar. The house
+              of Húrin and the men of Gondor have slightly higher scores.
+              Boromin, main character with the second highest sentiment score
+              and the fourth highest sentiment score of any character, is a
+              member of bith of these cultures which might explain the slight
+              increas in positive
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row align-items-center p-3">
-    <div class="col-md-12">
-      <h2>A title for a chapter</h2>
-    </div>
-    <div class="col-md-12">
-      <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
-    </div>
-    <div class="col-md-12">
-      <p>
-        A nice text describing the picture. A nice text describing the picture.A
-        nice text describing the picture.A nice text describing the picture.A
-        nice text describing the picture.A nice text describing the picture.A
-        nice text describing the picture.A nice text describing the picture.A
-        nice text describing the picture.A nice text describing the picture.A
-        nice text describing the picture.A nice text describing the picture.A
-        nice text describing the picture.A nice text describing the picture.A
-        nice text desc ribing the picture.A nice text describing the picture.A
-        nice text describing the pictu re.A nice text describing the picture.
-      </p>
-    </div>
-  </div>
 
-  <div id="about">
-    <div class="row">
-      <div class="col-4">
-        <img
-          src="../assets/LOTR/anton.jpg"
-          class="img-fluid"
-          alt="Responsive image"
-        />
-        <p class="p-3">
-          Anton Freyr Arnarsson
-          <br />
-          s202443
-        </p>
+      <div class="row align-items-center p-3">
+        <div class="col-md-12">
+          <h2>Comparisons - Books and Movies</h2>
+        </div>
+        <div class="col-md-12">
+          <h4>Language processing</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="row align-items-center p-3">
+<div class="col-md-12">
+          <div class="row align-items-center p-3">
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/books/fotrBook.png"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/books/ttBook.png"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img
+                  src="../assets/LOTR/books/rotkBook.png"
+                  class="img-fluid"
+                />
+                <figcaption>The fellowship of the Ring</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+            <div class="col-md-12">
+              <div class="row align-items-center p-3">
+                <div class="col-md-4">
+                  <figure>
+                    <img
+                      src="../assets/LOTR/movies/fellowship_movie_cloud.png"
+                      class="img-fluid"
+                    />
+                    <figcaption>The fellowship of the Ring</figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4">
+                  <figure>
+                    <img
+                      src="../assets/LOTR/movies/two_towers_move_cloud.png"
+                      class="img-fluid"
+                    />
+                    <figcaption>The fellowship of the Ring</figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4">
+                  <figure>
+                    <img
+                      src="../assets/LOTR/movies/return_movie_cloud.png"
+                      class="img-fluid"
+                    />
+                    <figcaption>The fellowship of the Ring</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>Add this</p>
+        </div>
+        <div class="col-md-12">
+          <h4>Sentiment analysis</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="row align-items-center p-3">
+            <div class="col-md-6">
+              <figure>
+                <img src="../assets/LOTR/books/sentiment_all_books.png" class="img-fluid" />
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <img
+                  src="../assets/LOTR/movies/all_movies_sentiment.png"
+                  class="img-fluid"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>Add text about this</p>
+        </div>
       </div>
-      <div class="col-4">
-        <img
-          src="../assets/berglind.jpg"
-          class="img-fluid"
-          alt="Responsive image"
-        />
-        <p class="p-3">
-          Berglind Lilja Björnsdóttir
-          <br />
-          S202073
-        </p>
+
+      <div id="about">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="../assets/LOTR/anton.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <p class="p-3">
+              Anton Freyr Arnarsson
+              <br />
+              s202443
+            </p>
+          </div>
+          <div class="col-4">
+            <img
+              src="../assets/berglind.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <p class="p-3">
+              Berglind Lilja Björnsdóttir
+              <br />
+              S202073
+            </p>
+          </div>
+          <div class="col-4">
+            <img
+              src="../assets/jon.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+            <p class="p-3">
+              Jón Ágúst Hannesson
+              <br />
+              s202057
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-4">
-        <img src="../assets/jon.jpg" class="img-fluid" alt="Responsive image" />
-        <p class="p-3">
-          Jón Ágúst Hannesson
-          <br />
-          s202057
-        </p>
-      </div>
+      <div class="col-md-2"></div>
     </div>
   </div>
 </template>
@@ -352,5 +724,8 @@ export default {
 .li .borderless {
   border-top: 0 none;
   border-bottom: 0 none;
+}
+figcaption {
+  font-weight: bold;
 }
 </style>
