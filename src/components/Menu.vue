@@ -14,7 +14,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="about" v-bind:class="{ active: isActive('about') }">Home</a>
@@ -35,7 +35,7 @@
               <a class="nav-link" href="third" v-bind:class="{ active: isActive('third') }">Our team</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
   </div>

@@ -38,8 +38,8 @@
           <h2 class="display-4">The data</h2>
           <p>
             Our main dataset was the Lord of the rings fandom wiki. The three
-            Lord of the rings books: "The fellowship of the Ring", "The two
-            towers", "The return of the King" and their movie counterparts were
+            Lord of the Rings books: "The Fellowship of the Ring", "The Two
+            Towers", "The Return of the King" and their movie counterparts were
             also used to deepen the analysis and to introduce temporal analysis.
           </p>
         </div>
@@ -50,7 +50,7 @@
             <a href="https://lotr.fandom.com/wiki/Main_Page"
               >Lord of the Rings fandom wiki</a
             >
-            is a community driven wiki page, focused on the Lord of the rings
+            is a community driven wiki page, focused on the Lord of the Rings
             thematic universe. From this site, lists of characters ,appearing in
             each of the thee movies, were collected. Using this list of
             characters , the wiki page for every character appearing in the
@@ -94,6 +94,24 @@
             they were used to perform sentimental analysis for major characters,
             races and cultures. The transcripts were also used to generate word
             clouds of frequently used words in the films.
+          </p>
+          <p>
+            The transcripts collected can be found here:
+            <br />
+            <a
+              href="http://www.councilofelrond.com/subject/the-fellowship-of-the-ring-2/"
+              >The Fellowship of the Ring</a
+            >
+            <br />
+            <a
+              href="https://digilander.libero.it/greetingsTdM/2t_copione_english.htm"
+              >The Two Towers</a
+            >
+            <br />
+            <a
+              href="http://www.councilofelrond.com/subject/return-of-the-king-extended-edition"
+              >The Return of the King</a
+            >
           </p>
         </div>
       </div>
@@ -340,10 +358,112 @@
       <div class="row align-items-center p-3">
         <div class="col-md-6">
           <h4>Communities</h4>
-          <p>texti eða tafla</p>
+          <p>
+            As mentioned previosly the network visualization is color coded by
+            communities. A community is a set of nodes, in this case characters,
+            that are densely connected to each other and loosely connected to
+            the nodes in the other communities. Listed below are all the
+            communities identified, named with the three most strongly connected
+            characters within each community.
+          </p>
         </div>
         <div class="col-md-6">
-          <p>texti eða tabbbbla</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Top connected members</th>
+                <th scope="col">Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Sauron, Aragorn, Galadriel</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Gandalf, Théoden, Faramir</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Saruman, Treebeard, Durin's Bane</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Pippin, Merry, Éomer</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Gimli, Legolas, Witch-king of Angmar</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Frodo, Sam, Gollum</td>
+                <td>29</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <p align=left>
+            <ins>Sauron - Aragorn II Elessar - Galadriel</ins>
+            <br>
+            This community represents the relationship of Aragorn, a king
+            amongst men, and Arwen, half-elven lady of Rivendell, who are lovers
+            in the sagas. The community includes their son Eldarion, Arwen's
+            father Elrond, and many of the most noble men and elves. It is
+            unclear why Sauron is a member of the community, most likely due to
+            the connection between Sauron and Isildur. Isildur cut The Ring of
+            Sauron in the War of the Last Alliance and Aragorn is the heir of
+            Isildur.
+            <br>
+            <ins>Gandalf - Théoden - Faramir</ins>
+            <br>
+            Here the members of the great houses of men are represented.
+            Specifically the Men of Gondor, Rohirrim and Rohan. A notable
+            mention is Brego, who is a horse of Rohan.
+            <br>
+            <ins>Saruman - Treebeard - Durin's Bane</ins>
+            <br>
+            This is a community for ancient beings. It includes, Wizards,
+            immortal creatures and Ents, a race of walking sentiant trees.            
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p align=left>
+            <ins>Peregrin Took - Meriadoc Brandybuck - Éomer</ins>
+            <br>
+            Here many of the Hobbits can be found. The two hobbit friends have
+            many relations with men and therefore a group of men such as Boromir
+            can also be found within this culture.
+            <br>
+            <ins>Gimli - Legolas - Witch-king of Angmar</ins>
+            <br>
+            This community is an interesting one. It includes the dear friends
+            Legolas the elf and Gimli the dwarf. It is unclear why this
+            community includes many antagonists of the story such as orks and
+            fiery eternal beings, one explenation might be how many battles
+            Gimli and Legolas took part in agains these evil creatures.
+            <br>
+            <ins>Frodo Baggins - Samwise Gamgee - Gollum</ins>
+            <br>
+            Last but not least this community represents the three travellers,
+            Frodo Baggins, Samwise Gamgee and Gollum, who together journeyed to
+            the dark relm of Mordor with the purpose of destroying the Ring. The
+            community also includes many of the characters who they meet on the
+            way such as the Spider Shelob and the very scary Blakv-Uruk Orc
+            Shagrat. The community also includes The families of the three,
+            Rosie Cotton, the future wife of Samwise and Déagol, the long lost
+            cousin and best friend of Gollum.
+          </p>
         </div>
       </div>
       <div class="row align-items-center p-3">
@@ -451,19 +571,19 @@
         <div class="col-md-4">
           <figure>
             <img src="../assets/LOTR/books/fotrBook.png" class="img-fluid" />
-            <figcaption>The fellowship of the Ring</figcaption>
+            <figcaption>The Fellowship of the Ring</figcaption>
           </figure>
         </div>
         <div class="col-md-4">
           <figure>
             <img src="../assets/LOTR/books/ttBook.png" class="img-fluid" />
-            <figcaption>The fellowship of the Ring</figcaption>
+            <figcaption>The Two Towers</figcaption>
           </figure>
         </div>
         <div class="col-md-4">
           <figure>
             <img src="../assets/LOTR/books/rotkBook.png" class="img-fluid" />
-            <figcaption>The fellowship of the Ring</figcaption>
+            <figcaption>The Return of the King</figcaption>
           </figure>
         </div>
       </div>
@@ -532,7 +652,7 @@
                   src="../assets/LOTR/movies/fellowship.jpg"
                   class="img-fluid"
                 />
-                <figcaption>The fellowship of the Ring</figcaption>
+                <figcaption>The Fellowship of the Ring</figcaption>
               </figure>
             </div>
             <div class="col-md-4">
@@ -541,7 +661,7 @@
                   src="../assets/LOTR/movies/two_towers.jpg"
                   class="img-fluid"
                 />
-                <figcaption>The fellowship of the Ring</figcaption>
+                <figcaption>The Two Towers</figcaption>
               </figure>
             </div>
             <div class="col-md-4">
@@ -550,7 +670,7 @@
                   src="../assets/LOTR/movies/return_of_the_king.jpg"
                   class="img-fluid"
                 />
-                <figcaption>The fellowship of the Ring</figcaption>
+                <figcaption>The return of the King</figcaption>
               </figure>
             </div>
           </div>
@@ -804,7 +924,7 @@
                   src="../assets/LOTR/movies/fellowship_movie_cloud.png"
                   class="img-fluid"
                 />
-                <figcaption>The fellowship of the Ring</figcaption>
+                <figcaption>The Fellowship of the Ring</figcaption>
               </figure>
             </div>
             <div class="col-md-4">
@@ -813,7 +933,7 @@
                   src="../assets/LOTR/movies/two_towers_move_cloud.png"
                   class="img-fluid"
                 />
-                <figcaption>The fellowship of the Ring</figcaption>
+                <figcaption>The Two Towers</figcaption>
               </figure>
             </div>
             <div class="col-md-4">
@@ -822,7 +942,7 @@
                   src="../assets/LOTR/movies/return_movie_cloud.png"
                   class="img-fluid"
                 />
-                <figcaption>The fellowship of the Ring</figcaption>
+                <figcaption>The return of the King</figcaption>
               </figure>
             </div>
           </div>
@@ -968,7 +1088,7 @@
                       src="../assets/LOTR/books/fotrBook.png"
                       class="img-fluid"
                     />
-                    <figcaption>The fellowship of the Ring</figcaption>
+                    <figcaption>The Fellowship of the Ring</figcaption>
                   </figure>
                 </div>
                 <div class="col-md-4">
@@ -977,7 +1097,7 @@
                       src="../assets/LOTR/books/ttBook.png"
                       class="img-fluid"
                     />
-                    <figcaption>The two Towers</figcaption>
+                    <figcaption>The Two Towers</figcaption>
                   </figure>
                 </div>
                 <div class="col-md-4">
@@ -999,7 +1119,7 @@
                       src="../assets/LOTR/movies/fellowship_movie_cloud.png"
                       class="img-fluid"
                     />
-                    <figcaption>The fellowship of the Ring</figcaption>
+                    <figcaption>The Fellowship of the Ring</figcaption>
                   </figure>
                 </div>
                 <div class="col-md-4">
@@ -1008,7 +1128,7 @@
                       src="../assets/LOTR/movies/two_towers_move_cloud.png"
                       class="img-fluid"
                     />
-                    <figcaption>The two Towers</figcaption>
+                    <figcaption>The Two Towers</figcaption>
                   </figure>
                 </div>
                 <div class="col-md-4">
@@ -1073,7 +1193,11 @@
           </p>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="display-4">About Us</h4>
+        </div>
+      </div>
       <div id="about">
         <div class="row">
           <div class="col-4">
