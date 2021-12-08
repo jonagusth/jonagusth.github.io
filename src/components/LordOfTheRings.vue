@@ -18,11 +18,17 @@
           </div>
           <div class="col-md-12">
             <p>
-              This project will investigate connections between characters of
-              the Lord of the Rings trilogy.
-              <span style="font-weight: bold; color: red"
-                >BÆTA EITTHVERJU VIÐ HÉR</span
-              >
+              In this project the Lord of the Rings thematic universe will be
+              investigated. In Lord of the rings there are many characters of
+              very distinct and diverse races which interact with each other on
+              all kinds of levels, using network analysis.
+            </p>
+            <p>
+              For example, the relationships between races and the cultures
+              within races will be investigated. As an example, the differences
+              between Rohirrim and The men of Gondor. Alongside this,
+              sentimental analysis and various natural language analysis will be
+              performed.
             </p>
           </div>
         </div>
@@ -95,7 +101,7 @@
         <div class="col-md-12">
           <h2 class="display-4">The network</h2>
         </div>
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
           <div class="embed-responsive embed-responsive-1by1">
             <iframe
               class="embed-responsive-item"
@@ -105,6 +111,16 @@
             ></iframe>
           </div>
         </div>
+        <div class="col-md-12">
+          <p>
+            The following plot is an interactive visualisation of the network.
+            The network visualized is the undirected variant of the giant
+            component of the entire network. The sizes of the nodes represent
+            their degree and the nodes are colored by their community. Hovering
+            over a displays the name of the character, their degree, race,
+            cultures and community.
+          </p>
+        </div> -->
         <div class="col-md-12">
           <h4>Tools used</h4>
           <p>
@@ -123,6 +139,26 @@
           <p>
             Once the network was constructed, some general statistics were
             extracted. The constructed network has 121 nodes, with 710 edges.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <div class="embed-responsive embed-responsive-1by1">
+            <iframe
+              class="embed-responsive-item"
+              src="LortNetwork.html"
+              width="610px"
+              height="810px"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p>
+            The following plot is an interactive visualisation of the network.
+            The network visualized is the undirected variant of the giant
+            component of the entire network. The sizes of the nodes represent
+            their degree and the nodes are colored by their community. Hovering
+            over a displays the name of the character, their degree, race,
+            cultures and community.
           </p>
         </div>
       </div>
@@ -287,8 +323,27 @@
             the network are major characters in the story.
           </p>
           <p>
-            <span style="color: Red">TODO BÆTA TEXTA HÉR OG Í NOTEBOOK</span>
+            Saruman and Sauron top the charts for the in degree. These two are
+            the main antoganists in the story. Many minor characters refrence
+            these on their wiki pages. Frodo has the equal amount of refrences
+            to Sauron. He is of course the carrier of the ring and arguably the
+            main character of the story, so it is no suprise he ranks highly.
           </p>
+          <p>
+            Aragorn is the highest ranking character, in regard to the out
+            degree. Throughout the story he interacts with many different
+            characters.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center p-3">
+        <div class="col-md-6">
+          <h4>Communities</h4>
+          <p>texti eða tafla</p>
+        </div>
+        <div class="col-md-6">
+          <p>texti eða tabbbbla</p>
         </div>
       </div>
       <div class="row align-items-center p-3">
