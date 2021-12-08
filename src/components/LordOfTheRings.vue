@@ -8,13 +8,13 @@
             <img src="../assets/LOTR/lotr_logo.png" class="img-fluid" />
           </div>
           <div class="col-md-6">
-            <h2>The Lord of the Rings</h2>
+            <h2 class="display-4">The Lord of the Rings</h2>
             <p>Social Graphs Final project</p>
           </div>
         </div>
         <div class="row align-items-center p-3">
           <div class="col-md-12">
-            <h2>The project</h2>
+            <h2 class="display-4">The project</h2>
           </div>
           <div class="col-md-12">
             <p>
@@ -29,16 +29,15 @@
       </div>
       <div class="row align-items-center p-3">
         <div class="col-md-12">
-          <h2>The data</h2>
-        </div>
-        <div class="col-md-12">
-          <img src="../assets/LOTR/placeholder.png" class="img-fluid" />
-        </div>
-        <div class="col-md-12">
+          <h2 class="display-4">The data</h2>
           <p>
-            This project uses 3 data sources, where each data source is used to
-            perform different analysis.
+            Our main dataset was the Lord of the rings fandom wiki. The three
+            Lord of the rings books: "The fellowship of the Ring", "The two
+            towers", "The return of the King" and their movie counterparts were
+            also used to deepen the analysis and to introduce temporal analysis.
           </p>
+        </div>
+        <div class="col-md-6">
           <h4>Fandom Wiki</h4>
           <p>
             The
@@ -59,10 +58,30 @@
             modeled as a link in the network. The network constructed has 121
             nodes and 710 nodes.
           </p>
+        </div>
+        <div class="col-md-6">
+          <figure>
+            <img src="../assets/LOTR/fandom.png" class="img-fluid" />
+            <figcaption>The fandom page for Aragorn</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row align-items-center p-3">
+        <div class="col-md-6">
           <h4>The Books</h4>
-          <p>The books were used as a data source yes</p>
-
+          <p>
+            The text files for all the Lord of the Rings books where downloaded
+            from the following
+            <a href="http://www.glozman.com/textpages.html">web site.</a>
+            The books are used to perform natural language processing. They will
+            be used to analyze the sentiment for each chapter in the books, the
+            distribution of interesting words throughout the books and generate
+            word clouds of frequently used words, among other things.
+          </p>
+        </div>
+        <div class="col-md-6">
           <h4>The movie scripts (Transcripts)</h4>
+
           <p>
             Transcripts of the three movies were used a data sources as well. As
             the transcripts specify very well which character is saying what,
@@ -74,18 +93,16 @@
       </div>
       <div class="row align-items-center p-3">
         <div class="col-md-12">
-          <h2>The network</h2>
+          <h2 class="display-4">The network</h2>
         </div>
         <div class="col-md-12">
-          <div class="col-md-12">
-            <div class="embed-responsive embed-responsive-1by1">
-              <iframe
-                class="embed-responsive-item"
-                src="LortNetwork.html"
-                width="610px"
-                height="810px"
-              ></iframe>
-            </div>
+          <div class="embed-responsive embed-responsive-1by1">
+            <iframe
+              class="embed-responsive-item"
+              src="LortNetwork.html"
+              width="610px"
+              height="810px"
+            ></iframe>
           </div>
         </div>
         <div class="col-md-12">
@@ -285,14 +302,18 @@
           <p>
             In the following graph the distribution of cultures can be seen. The
             top cultures in the network are: 'The shire', 'Rohirrim' and 'The
-            men of Gondor'. As can be seen is this graph, many cultures are
-            represented by one character in the network.
+            men of Gondor'. As the story starts in the shire, many characters
+            appear early on that have 'the shire' as their culture. The latter
+            two are the cultures of the two largest group of men in the stories,
+            so it is no suprise they are so populated. As can be seen is this
+            graph, many cultures are represented by one character in the
+            network.
           </p>
         </div>
       </div>
       <div class="row align-items-center p-3">
         <div class="col-md-12">
-          <h2>The books</h2>
+          <h2 class="display-4">The books</h2>
         </div>
 
         <div class="col-md-12">
@@ -446,7 +467,7 @@
       </div>
       <div class="row align-items-center p-3">
         <div class="col-md-12">
-          <h2>The movies</h2>
+          <h2 class="display-4">The movies</h2>
         </div>
         <div class="col-md-12">
           <div class="row align-items-center p-3">
@@ -871,7 +892,13 @@
 
       <div class="row align-items-center p-3">
         <div class="col-md-12">
-          <h2>Comparisons - Books and Movies</h2>
+          <h2 class="display-4">Comparisons - Books and Movies</h2>
+          <p>
+            Having analyzed the three Lord of the Rings books and their movie
+            counterparts it is worthwile to compare the two and take a look a
+            where the different formats of portraying the stories are similar
+            and where they differ.
+          </p>
         </div>
         <div class="col-md-12">
           <h4>Language processing</h4>
